@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './HeaderOrderPage.module.css';
 
 const HeaderOrderPage = ({ onChangeSortType, category }) => {

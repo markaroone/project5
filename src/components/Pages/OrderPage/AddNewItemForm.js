@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import styles from './AddNewItemForm.module.css';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -9,9 +9,6 @@ const AddNewItemForm = ({ items, onAddNewItem }) => {
   const [url, setUrl] = useState('');
   const [category, setCategory] = useState('');
   const [formError, setFormError] = useState();
-
-  const nameInputRef = useRef();
-  // const nameInputRef = useRef();
 
   const changeNameHandler = (e) => {
     setName(e.target.value);
@@ -84,7 +81,6 @@ const AddNewItemForm = ({ items, onAddNewItem }) => {
   return (
     <section className={styles.wrapper}>
       <form className={styles.form} onSubmit={submitFormHandler}>
-        
         <input
           placeholder='Item Name*'
           className={formError && styles.error}
@@ -95,7 +91,6 @@ const AddNewItemForm = ({ items, onAddNewItem }) => {
           required
         />
 
-        
         <textarea
           placeholder='Item Description*'
           name='description'
@@ -115,7 +110,13 @@ const AddNewItemForm = ({ items, onAddNewItem }) => {
           required
         />
 
-        <input placeholder='Item Image URL*' type='url' value={url} onChange={changeUrlHandler} required />
+        <input
+          placeholder='Item Image URL*'
+          type='url'
+          value={url}
+          onChange={changeUrlHandler}
+          required
+        />
 
         <select
           name='category'

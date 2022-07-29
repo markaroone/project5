@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './OrderPage.module.css';
 import useWidth from '../../../hooks/useWidth';
 import SidebarOrderPage from './SidebarOrderPage';
@@ -31,7 +31,7 @@ const OrderPage = ({ items, dispatchCartItems, onAddNewItem }) => {
               onChangeSortType={changeSortTypeHandler}
               category={category}
             />
-            
+
             <ItemList
               items={items}
               sortBy={sortType}
