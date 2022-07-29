@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './HomePage.module.css';
 import image from '../../../assets/images/istockphoto-973297786-612x612.jpg';
-import InfiniteCarousel from 'react-leaf-carousel';
+// import InfiniteCarousel from 'react-leaf-carousel';
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
@@ -12,9 +12,8 @@ const HomePage = () => {
           <h2> It's Made Quick &amp; Delicious!&#8482;</h2>
           <h1> The art of Speed &amp; Quality </h1>
           <p>
-            {' '}
             Find all your favorite pizza in one website! It's quick, easy and
-            totally secure.{' '}
+            totally secure.
           </p>
           <Link className={styles.link} to='/order/pizza'>
             <button>Order Now!</button>
@@ -28,45 +27,40 @@ const HomePage = () => {
 
       <ul className={styles['list-container']}>
         <li>
-          {' '}
           <img
             src='https://www.nicepng.com/png/full/26-269787_grab-logo-grab-logo-png.png'
             alt='Grab Logo'
-          />{' '}
+          />
         </li>
         <li>
-          {' '}
           <img
             src='https://seeklogo.com/images/F/foodpanda-logo-551BD51321-seeklogo.com.png'
             alt='Food Panda Logo'
-          />{' '}
+          />
         </li>
         <li>
-          {' '}
           <img
             src='https://seeklogo.com/images/L/lalamove-logo-AF143284AE-seeklogo.com.png'
             alt='Lalamove Logo'
-          />{' '}
+          />
         </li>
         <li>
-          {' '}
           <img
             src='https://seeklogo.com/images/Z/zomato-logo-8AAA1690DE-seeklogo.com.png'
             alt='Zomato Logo'
-          />{' '}
+          />
         </li>
         <li>
-          {' '}
           <img
             src='https://mangan.ph/images/mangan-logo.png'
             alt='Mangan PH Logo'
-          />{' '}
+          />
         </li>
       </ul>
 
-      <h2 className={styles['menu-header']}> OUR MENU </h2>
+      {/* <h2 className={styles['menu-header']}> OUR MENU </h2> */}
 
-      <div>
+      {/* <div>
         <InfiniteCarousel
           breakpoints={[
             {
@@ -151,7 +145,8 @@ const HomePage = () => {
             />
           </Link>
         </InfiniteCarousel>
-      </div>
+      </div> */}
+
       <section className={styles.latestMenu}>
         <div className={styles['latestMenu-container']}>
           <h3>WHAT'S HOT?</h3>
