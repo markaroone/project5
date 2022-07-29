@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './HomePage.module.css';
 import image from '../../../assets/images/istockphoto-973297786-612x612.jpg';
-// import InfiniteCarousel from 'react-leaf-carousel';
+import InfiniteCarousel from 'react-leaf-carousel';
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
@@ -58,9 +58,9 @@ const HomePage = () => {
         </li>
       </ul>
 
-      {/* <h2 className={styles['menu-header']}> OUR MENU </h2> */}
+      <h2 className={styles['menu-header']}> OUR MENU </h2>
 
-      {/* <div>
+      <div>
         <InfiniteCarousel
           breakpoints={[
             {
@@ -145,7 +145,7 @@ const HomePage = () => {
             />
           </Link>
         </InfiniteCarousel>
-      </div> */}
+      </div>
 
       <section className={styles.latestMenu}>
         <div className={styles['latestMenu-container']}>
